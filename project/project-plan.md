@@ -39,6 +39,8 @@ The dataset contains information on average maximum temperatures recorded at var
 1. Searching for Dataset [#1][i1]
 2. Writing the initial project plan
 3. Cleaning of data and data manupulation and transformation
-4. 
+4. Writing Test file for the pipeline
+5. Implementing pipeline for the project
+6. Final report of the analysis
 
 [i1]: https://github.com/jvalue/made-template/issues/1
