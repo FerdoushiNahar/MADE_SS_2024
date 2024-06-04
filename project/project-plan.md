@@ -12,7 +12,7 @@
 ## Description
 
 <!-- Describe your data science project in max. 200 words. Consider writing about why and how you attempt it. -->
-This project aims to explore the relationship between Greenhouse Gas(Co2) emissions and regional temperature trends in Rathaus area of konstanz.
+This project aims to explore the relationship between Greenhouse Gas (CO₂) emissions and regional temperature trends in the Rathaus area of Konstanz. By analyzing historical data on CO₂ levels and temperature records, we aim to identify patterns and correlations that can provide insights into the impact of greenhouse gas emissions on local climate changes. The study seeks to contribute to the understanding of how human activities influence environmental conditions, which is essential for developing effective climate policies and mitigation strategies. This analysis will leverage publicly available datasets to examine temporal trends and potential causal relationships, offering a localized perspective on the broader issue of global climate change.
 
 ## Datasources
 
@@ -30,7 +30,7 @@ This project aims to explore the relationship between Greenhouse Gas(Co2) emissi
 * Data URL: [https://offenedaten-konstanz.de/sites/default/files/Temperaturwerte_Rathaus_0.csv]
 * Data Type: CSV
 ### Short description of the DataSource
-This project aims to explore the relationship between Greenhouse Gas (CO₂) emissions and regional temperature trends in the Rathaus area of Konstanz. By analyzing historical data on CO₂ levels and temperature records, we aim to identify patterns and correlations that can provide insights into the impact of greenhouse gas emissions on local climate changes. The study seeks to contribute to the understanding of how human activities influence environmental conditions, which is essential for developing effective climate policies and mitigation strategies. This analysis will leverage publicly available datasets to examine temporal trends and potential causal relationships, offering a localized perspective on the broader issue of global climate change.
+The dataset contains information on temperatuure trend in Rathaus area of konstanz.
 ## Work Packages
 
 <!-- List of work packages ordered sequentially, each pointing to an issue with more details. -->
