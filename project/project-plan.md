@@ -19,15 +19,15 @@ This project aims to explore the relationship between industrial greenhouse gas 
 <!-- Describe each datasources you plan to use in a section. Use the prefic "DatasourceX" where X is the id of the datasource. -->
 
 ### Datasource1: Greenhouse Data
-* Metadata URL: [https://data.europa.eu/en]
-* Data URL: [https://data.europa.eu/data/datasets/03e87a32-e393-43b2-8713-f130629c30a2?locale=en]
+* Metadata URL: [https://offenedaten-konstanz.de/dataset/co-werte-konstanz]
+* Data URL: [https://offenedaten-konstanz.de/sites/default/files/CO2_Werte_Rathaus_1.csv]
 * Data Type: CSV
  ### Short description of the DataSource
  The dataset contains information on greenhouse gas emissions in various sectors of the economy in Ireleand.This data 
  helps in analyzing trends in greenhouse gas emissions across different industrial sectors over time
 ### Datasource2: temperature data
-* Metadata URL: [https://data.europa.eu/en]
-* Data URL: [https://data.europa.eu/data/datasets/8f94fc37-71e2-4724-b3e2-903ccf5ee2de?locale=en]
+* Metadata URL: [https://offenedaten-konstanz.de/dataset/temperaturwerte-konstanz]
+* Data URL: [https://offenedaten-konstanz.de/sites/default/files/Temperaturwerte_Rathaus_0.csv]
 * Data Type: CSV
 ### Short description of the DataSource
 The dataset contains information on average maximum temperatures recorded at various meteorological weather stations in Ireland. This is useful for analyzing historical temperature trends and patterns across different weather stations over time. 
