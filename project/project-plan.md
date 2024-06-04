@@ -2,17 +2,17 @@
 
 ## Title
 <!-- Give your project a short title. -->
-"Climate Change: Industrial Greenhouse Gas Emissions and Regional Temperature Trends in Ireland".
+"Climate Change: Greenhouse Gas(Co2) Emissions and Temperature Trends in Rathaus area of konstanz".
 
 ## Main Question
 
 <!-- Think about one main question you want to answer based on the data. -->
-1. How Greenhouse gas emission effect on the climate change?
+1.How do Greenhouse Gas (CO₂) emissions affect climate change in the Rathaus area of Konstanz?
 
 ## Description
 
 <!-- Describe your data science project in max. 200 words. Consider writing about why and how you attempt it. -->
-This project aims to explore the relationship between industrial greenhouse gas emissions and regional temperature trends in Ireland.
+This project aims to explore the relationship between Greenhouse Gas(Co2) emissions and regional temperature trends in Rathaus area of konstanz.
 
 ## Datasources
 
@@ -23,15 +23,14 @@ This project aims to explore the relationship between industrial greenhouse gas 
 * Data URL: [https://offenedaten-konstanz.de/sites/default/files/CO2_Werte_Rathaus_1.csv]
 * Data Type: CSV
  ### Short description of the DataSource
- The dataset contains information on greenhouse gas emissions in various sectors of the economy in Ireleand.This data 
- helps in analyzing trends in greenhouse gas emissions across different industrial sectors over time
+ The dataset contains information on greenhouse gas emissions specifically Co2 in Rathaus area of konstanz.This data 
+ helps in analyzing trends in greenhouse gas emissions across Rathaus area of konstanz over time
 ### Datasource2: temperature data
 * Metadata URL: [https://offenedaten-konstanz.de/dataset/temperaturwerte-konstanz]
 * Data URL: [https://offenedaten-konstanz.de/sites/default/files/Temperaturwerte_Rathaus_0.csv]
 * Data Type: CSV
 ### Short description of the DataSource
-The dataset contains information on average maximum temperatures recorded at various meteorological weather stations in Ireland. This is useful for analyzing historical temperature trends and patterns across different weather stations over time. 
-
+This project aims to explore the relationship between Greenhouse Gas (CO₂) emissions and regional temperature trends in the Rathaus area of Konstanz. By analyzing historical data on CO₂ levels and temperature records, we aim to identify patterns and correlations that can provide insights into the impact of greenhouse gas emissions on local climate changes. The study seeks to contribute to the understanding of how human activities influence environmental conditions, which is essential for developing effective climate policies and mitigation strategies. This analysis will leverage publicly available datasets to examine temporal trends and potential causal relationships, offering a localized perspective on the broader issue of global climate change.
 ## Work Packages
 
 <!-- List of work packages ordered sequentially, each pointing to an issue with more details. -->
