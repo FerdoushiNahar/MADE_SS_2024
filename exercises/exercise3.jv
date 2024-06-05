@@ -1,0 +1,76 @@
+pipeline GoodsTransportDataPipeline {
+
+    block FetchCSVData oftype HttpExtractor {
+        url: "https://www-genesis.destatis.de/genesis/downloads/00/tables/46131-0014_00.csv";
+        retries: 3;
+    }
+
+    block DecodeText oftype TextFileInterpreter {
+        encoding: "latin3";
+    }
+
+    block FilterRelevantLines oftype TextRangeSelector {
+        lineFrom: 8;
+    }
+
+    block SplitCSV oftype CSVInterpreter {
+        delimiter: ";";
+    }
+
+    block WriteHeaders oftype CellWriter {
+        at: range A1:E1;
+        write: ['year', 'month', 'id_goods', 'name_goods', 'source_goods'];
+    }
+
+    block WriteQuantityHeaders oftype CellWriter {
+        at: range AT1:AU1;
+        write: ['import_qty', 'total_qty'];
+    }
+
+    constraint NonNegativeNumbers oftype RangeConstraint {
+        lowerBound: 0;
+        lowerBoundInclusive: false;
+    }
+
+    constraint ValidateMonth oftype AllowlistConstraint {
+        allowlist: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
+    }
+
+    constraint CheckGoodsId oftype RegexConstraint {
+        regex: /^NST7-[A-Z0-9]{3}$/;
+    }
+
+    valuetype IntegerNonNegative oftype integer {
+        constraints: [NonNegativeNumbers];
+    }
+
+    valuetype MonthText oftype text {
+        constraints: [ValidateMonth];
+    }
+
+    valuetype GoodsIdText oftype text {
+        constraints: [CheckGoodsId];
+    }
+
+    block FormatDataToTable oftype TableInterpreter {
+        header: true;
+        columns: [
+            "year" oftype IntegerNonNegative,
+            "month" oftype MonthText,
+            "id_goods" oftype GoodsIdText,
+            "name_goods" oftype text,
+            "source_goods" oftype text,
+            "import_qty" oftype IntegerNonNegative,
+            "total_qty" oftype IntegerNonNegative
+        ];
+    }
+
+    block StoreDataInSQLite oftype SQLiteLoader {
+        table: "transported_goods";
+        file: "./transportGoodsDatabase.sqlite";
+    }
+
+    FetchCSVData
+        -> DecodeText -> FilterRelevantLines -> SplitCSV -> WriteHeaders  -> WriteQuantityHeaders   -> FormatDataToTable     -> StoreDataInSQLite;
+
+}
