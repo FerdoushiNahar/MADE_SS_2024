@@ -1,4 +1,4 @@
-pipeline GoodsTransportDataPipeline {
+pipeline TransportDataPipeline {
 
     block FetchCSVData oftype HttpExtractor {
         url: "https://www-genesis.destatis.de/genesis/downloads/00/tables/46131-0014_00.csv";
