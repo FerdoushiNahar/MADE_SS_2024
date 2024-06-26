@@ -1,28 +1,29 @@
+
 #!/bin/bash
 
-# This script runs the tests for the project
+# Exit immediately if a command exits with a non-zero status.
+set -e
 
-# Downloading large datasets can be problematic in CI environments.
-# Uncomment the following lines to run the actual tests if datasets are accessible.
+# Print commands and their arguments as they are executed.
+set -x
 
-# echo "Running tests with actual datasets"
-# python tests.py
+# Check if Python 3 is installed
+if ! command -v python3 >/dev/null 2>&1; then
+    echo "Python 3 is not installed. Please install Python 3."
+    exit 1
+fi
 
-# For now, we mock the data or skip the download
-echo "Running tests with mock data"
+# Install required Python packages
+python3 -m pip install --upgrade pip
+python3 -m pip install -r requirements.txt
 
-# Create mock data and save as CSVs (optional, adjust as needed)
-echo "Date,t" > mock_temp.csv
-echo "2023-06-25T12:00:00Z,25.6" >> mock_temp.csv
-echo "2023-06-25T13:00:00Z,25.8" >> mock_temp.csv
+# Execute the main pipeline script
+echo "Running the main pipeline script..."
+python3 pipeline.py
 
-echo "Date,eco2" > mock_co2.csv
-echo "2023-06-25T12:00:00Z,400" >> mock_co2.csv
-echo "2023-06-25T13:00:00Z,420" >> mock_co2.csv
+# Execute tests
+echo "Running tests..."
+python3 -m unittest tests
 
-# Replace URLs with mock files in tests.py
-sed -i 's|https://offenedaten-konstanz.de/sites/default/files/Temperaturwerte_Rathaus_0.csv|mock_temp.csv|g' tests.py
-sed -i 's|https://offenedaten-konstanz.de/sites/default/files/CO2_Werte_Rathaus_1.csv|mock_co2.csv|g' tests.py
-
-# Run tests with mock data
-python tests.py
+# If all tests pass
+echo "All tests passed successfully."
