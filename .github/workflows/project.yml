@@ -1,28 +1,33 @@
-name: Python Project CI
+# .github/workflows/project.yml
+name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  build-and-test:
+  test:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v2
       with:
-        python-version: '3.8'
+        python-version: '3.x'
 
-    - name: Install Dependencies
+    - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
-      working-directory: project
+        pip install pandas requests pytest
 
-    - name: Run Script and Tests
+    - name: Run pipeline
       run: |
-        chmod +x tests.sh
-        ./tests.sh
-      working-directory: project
+        python3 ./project/pipeline.py
+
+    - name: Run tests
+      run: |
+        python3 ./project/test.py
