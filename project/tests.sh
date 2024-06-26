@@ -16,6 +16,6 @@ fi
 
 # Run the Python tests
 echo "Running the Python tests..."
-pytest test.py
+pytest tests.py
 
 echo "All tests completed!"
