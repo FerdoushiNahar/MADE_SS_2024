@@ -1,9 +1,10 @@
-# Methods of Advanced Data Engineering Jayvee Exercises
-# Exercise Badges
+# Methods of Advanced Data Engineering 
+# Jayvee Exercises (Exercise Badges)
 
 ![](https://byob.yarr.is/FerdoushiNahar/MADE_SS_2024/score_ex1) ![](https://byob.yarr.is/FerdoushiNahar/MADE_SS_2024/score_ex2) ![](https://byob.yarr.is/FerdoushiNahar/MADE_SS_2024/score_ex3) ![](https://byob.yarr.is/FerdoushiNahar/MADE_SS_2024/score_ex4) ![](https://byob.yarr.is/FerdoushiNahar/MADE_SS_2024/score_ex5)
 
-# Methods of Advanced Data Engineering Template Project
+# Project: "Climate Change: Greenhouse Gas(Co2) Emissions and Temperature Trends in Rathaus area of konstanz"
+<img src="project\image\konstanz.jpg" width="800" height="466">
 
 This template project provides some structure for your open data project in the MADE module at FAU.
 This repository contains (a) a data science project that is developed by the student over the course of the semester, and (b) the exercises that are submitted over the course of the semester.
