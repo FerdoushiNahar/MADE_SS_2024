@@ -20,15 +20,13 @@ For this project we are using two open data sources [**Greenhouse Data**](https:
 <img src="project\image\methodology.PNG" width="600" height="366">
 The project uses an ETL (Extract, Transform, Load) pipeline structure by following the steps:
 
-
-# Extract:
-        Read data from online CSV files.
- # Transform:
+    Extract: Read data from online CSV files.
+    Transform:
         Validate: Check for invalid temperature and CO₂ formats.
         Clean: Split and clean date and time columns.
         Merge: Combine temperature and CO₂ datasets.
-  #  Load:
-        Store the merged dataset in an SQLite database.
+    Load: Store the merged dataset in an SQLite database.
+
 
 ### Exporting a Jupyter Notebook
 Jupyter Notebooks can be exported using `nbconvert` (`pip install nbconvert`). For example, to export the example notebook to html: `jupyter nbconvert --to html examples/final-report-example.ipynb --embed-images --output final-report.html`
