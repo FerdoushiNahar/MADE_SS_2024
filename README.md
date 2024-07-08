@@ -11,7 +11,8 @@
 
 ## Project Overview
 This project aims to explore the relationship between Greenhouse Gas (CO₂) emissions and regional temperature trends in the Rathaus area of Konstanz. By analyzing historical data on CO₂ levels and temperature records, we aim to identify patterns and correlations that can provide insights into the impact of greenhouse gas emissions on local climate changes. The study seeks to contribute to the understanding of how human activities influence environmental conditions, which is essential for developing effective climate policies and mitigation strategies. This analysis will leverage publicly available datasets to examine temporal trends and potential causal relationships, offering a localized perspective on the broader issue of global climate change.
-
+### Datasets
+1. [**Datasource1: Greenhouse Data**](https://offenedaten-konstanz.de/dataset/co-werte-konstanz): The dataset includes monthly burned area data (in hectares) from 2002 to 2023 for all countries and regions. It categorizes the data by types of land, such as forests, savannas, shrublands/grasslands, croplands, and others. This helps in analyzing fire patterns and their effects on different regions and types of land.
 
 ## Project Work
 Your data engineering project will run alongside lectures during the semester. We will ask you to regularly submit project work as milestones so you can reasonably pace your work. All project work submissions **must** be placed in the `project` folder.
