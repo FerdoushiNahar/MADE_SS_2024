@@ -12,7 +12,7 @@
 ## Project Overview
 This project aims to explore the relationship between Greenhouse Gas (CO₂) emissions and regional temperature trends in the Rathaus area of Konstanz. By analyzing historical data on CO₂ levels and temperature records, we aim to identify patterns and correlations that can provide insights into the impact of greenhouse gas emissions on local climate changes. The study seeks to contribute to the understanding of how human activities influence environmental conditions, which is essential for developing effective climate policies and mitigation strategies. This analysis will leverage publicly available datasets to examine temporal trends and potential causal relationships, offering a localized perspective on the broader issue of global climate change.
 ### Datasets
-For this project we are using two open data sources [**Greenhouse Data**](https://offenedaten-konstanz.de/dataset/co-werte-konstanz) contains information on greenhouse gas emissions specifically Co2 in Rathaus area of konstanz and [**Temperature Data**] which provides information on temperatuure trend in Rathaus area of konstanz.
+For this project we are using two open data sources [**Greenhouse Data**](https://offenedaten-konstanz.de/dataset/co-werte-konstanz) contains information on greenhouse gas emissions specifically Co2 in Rathaus area of konstanz and [**Temperature Data**]([https://offenedaten-konstanz.de/dataset/temperaturwerte-konstanz) which provides information on temperatuure trend in Rathaus area of konstanz.
 
 
 
