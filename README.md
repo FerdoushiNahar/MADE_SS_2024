@@ -6,10 +6,11 @@
 # Project: "Climate Change: Greenhouse Gas(Co2) Emissions and Temperature Trends in Rathaus area of konstanz"
 <img src="project\image\konstanz.jpg" width="800" height="466">
 
-## Project Description
+## Main Question
+1.How do Greenhouse Gas (CO₂) emissions affect climate change in the Rathaus area of Konstanz?
+
+## Project Overview
 This project aims to explore the relationship between Greenhouse Gas (CO₂) emissions and regional temperature trends in the Rathaus area of Konstanz. By analyzing historical data on CO₂ levels and temperature records, we aim to identify patterns and correlations that can provide insights into the impact of greenhouse gas emissions on local climate changes. The study seeks to contribute to the understanding of how human activities influence environmental conditions, which is essential for developing effective climate policies and mitigation strategies. This analysis will leverage publicly available datasets to examine temporal trends and potential causal relationships, offering a localized perspective on the broader issue of global climate change.
-
-
 
 
 ## Project Work
