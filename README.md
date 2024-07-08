@@ -18,7 +18,17 @@ For this project we are using two open data sources [**Greenhouse Data**](https:
 
 ## Project Structure
 <img src="project\image\methodology.PNG" width="600" height="366">
-Your data engineering project will run alongside lectures during the semester. We will ask you to regularly submit project work as milestones so you can reasonably pace your work. All project work submissions **must** be placed in the `project` folder.
+The project uses an ETL (Extract, Transform, Load) pipeline structure by following the steps:
+
+
+# Extract:
+        Read data from online CSV files.
+ # Transform:
+        Validate: Check for invalid temperature and CO₂ formats.
+        Clean: Split and clean date and time columns.
+        Merge: Combine temperature and CO₂ datasets.
+  #  Load:
+        Store the merged dataset in an SQLite database.
 
 ### Exporting a Jupyter Notebook
 Jupyter Notebooks can be exported using `nbconvert` (`pip install nbconvert`). For example, to export the example notebook to html: `jupyter nbconvert --to html examples/final-report-example.ipynb --embed-images --output final-report.html`
