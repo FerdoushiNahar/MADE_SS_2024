@@ -1,3 +1,4 @@
+# Methods of Advanced Data Engineering Jayvee Exercises
 # Exercise Badges
 
 ![](https://byob.yarr.is/FerdoushiNahar/MADE_SS_2024/score_ex1) ![](https://byob.yarr.is/FerdoushiNahar/MADE_SS_2024/score_ex2) ![](https://byob.yarr.is/FerdoushiNahar/MADE_SS_2024/score_ex3) ![](https://byob.yarr.is/FerdoushiNahar/MADE_SS_2024/score_ex4) ![](https://byob.yarr.is/FerdoushiNahar/MADE_SS_2024/score_ex5)
