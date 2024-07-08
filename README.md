@@ -36,7 +36,7 @@ The project uses an ETL (Extract, Transform, Load) pipeline structure by followi
 		"pip install -r requirements.txt"
 4. Run the project by running the pipeline shell script ".project/pipeline.sh"
 5. To run the test will have to execute test shell script ".project/tests.sh"
-6. Finally, r explore the report at "./project/analysis-report.pdf"
+6. Finally,  explore the report at "./project/analysis-report.pdf"
 ### Exporting a Jupyter Notebook
 Jupyter Notebooks can be exported using `nbconvert` (`pip install nbconvert`). For example, to export the example notebook to html: `jupyter nbconvert --to html examples/final-report-example.ipynb --embed-images --output final-report.html`
 
