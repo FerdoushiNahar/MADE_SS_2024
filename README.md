@@ -28,7 +28,8 @@ The project uses an ETL (Extract, Transform, Load) pipeline structure by followi
     Load: Store the merged dataset in an SQLite database.
 
 ## Project Setup:
- Clone the [repository](https://github.com/FerdoushiNahar/MADE_SS_2024.git)
+1. Clone the [repository](https://github.com/FerdoushiNahar/MADE_SS_2024.git)
+ 
 2. Install [Python](https://www.python.org/downloads/)
 3. Installing Dependecies using requirements.txt:
 	To install the dependencies for this project, run the following command to install the dependencies specified in the requirements.txt file: 
