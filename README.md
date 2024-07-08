@@ -16,7 +16,8 @@ For this project we are using two open data sources [**Greenhouse Data**](https:
 
 
 
-## Project Work
+## Project Structure
+<img src="project\image\methodology.PNG" width="600" height="366">
 Your data engineering project will run alongside lectures during the semester. We will ask you to regularly submit project work as milestones so you can reasonably pace your work. All project work submissions **must** be placed in the `project` folder.
 
 ### Exporting a Jupyter Notebook
