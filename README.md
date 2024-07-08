@@ -27,7 +27,15 @@ The project uses an ETL (Extract, Transform, Load) pipeline structure by followi
         Merge: Combine temperature and CO₂ datasets.
     Load: Store the merged dataset in an SQLite database.
 
-
+## Project Setup:
+ Clone the [repository](https://github.com/FerdoushiNahar/MADE_SS_2024.git)
+2. Install [Python](https://www.python.org/downloads/)
+3. Installing Dependecies using requirements.txt:
+	To install the dependencies for this project, run the following command to install the dependencies specified in the requirements.txt file: 
+		"pip install -r requirements.txt"
+4. Run the project by running the pipeline shell script ".project/pipeline.sh"
+5. To run the test will have to execute test shell script ".project/tests.sh"
+6. Finally, r explore the report at "./project/analysis-report.pdf"
 ### Exporting a Jupyter Notebook
 Jupyter Notebooks can be exported using `nbconvert` (`pip install nbconvert`). For example, to export the example notebook to html: `jupyter nbconvert --to html examples/final-report-example.ipynb --embed-images --output final-report.html`
 
